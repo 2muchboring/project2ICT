@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #007bff, #0062cc);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: Pink;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      font-family: 'Dancing Script', cursive;
+      }
+
+    .logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .header {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .site-title {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .logo {
+        max-width: 80px;
+      }
+    }
+    body{
+        background: url(https://media.istockphoto.com/id/1295606365/vector/hearts.jpg?s=612x612&w=0&k=20&c=Wt2zQBdVHDeSZjhzqPXiLTNq8aHDGED48dRJ5UpEWi4=);
+        margin: 0;
+        padding: 0;
+    }
+
+    
+.login-container {
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: #007bff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #fff;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0056b3;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #003c80;
+}
+
+@media (max-width: 600px) {
+  .login-container {
+    width: 80%;
+  }
+}
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <div class="site-title">Tita Jirah Maritesa Love Advice </div>
+    <img class="logo" src="https://png.pngtree.com/png-clipart/20230310/ourmid/pngtree-smiling-beautiful-girl-logo-png-image_6642049.png" alt="Logo">
+  </div>
+
+
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="logx">
+      <input id="email" type="text" placeholder="Email" required>
+      <input id="password" type="password" placeholder="Password" required>
+      <button id="submit" type="submit">Login</button>
+      <button id="signup" type="submit">SignUp</button>
+    </form>
+  </div>
+  <script>
+     document.getElementById('logx').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the form from submitting
+
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('password').value;
+
+      if (email === 'admin' && password === 'admin') {
+        window.location.href = 'intro.html'; // Replace 'success.html' with the URL of your desired success page
+      } else {
+        alert('Invalid email or password. Please try again.'); // Replace with your desired action for failed login
+      }
+    });
+  </script>
+
+</body>
+</html>

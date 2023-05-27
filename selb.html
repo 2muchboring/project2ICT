@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: linear-gradient(to bottom, #007bff, #0062cc);
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .site-title {
+      font-size: 30px;
+      font-weight: bold;
+      color: Pink;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+      font-family: 'Dancing Script', cursive;
+      }
+
+    .logo {
+      max-width: 100px;
+      height: auto;
+    }
+
+    @media only screen and (max-width: 480px) {
+      .header {
+        flex-direction: column;
+        padding: 10px;
+      }
+
+      .site-title {
+        margin-bottom: 10px;
+        text-align: center;
+      }
+
+      .logo {
+        max-width: 80px;
+      }
+    }
+    body{
+        background: url(https://media.istockphoto.com/id/1295606365/vector/hearts.jpg?s=612x612&w=0&k=20&c=Wt2zQBdVHDeSZjhzqPXiLTNq8aHDGED48dRJ5UpEWi4=);
+        margin: 0;
+        padding: 0;
+        
+    }
+    .relstat{
+        width: 480px;
+        background-color: lightgreen;
+        font-family: 'Righteous', cursive;
+        text-align: center;
+        margin: auto;
+        transform: skew(-10deg);
+        box-shadow: 0px 5px 5px 5px black ;
+        margin-bottom: 30px;
+    }
+    
+
+    @media only screen and (max-width: 480px) {
+      .relstat {
+        flex-direction: column;
+        padding: 10px;
+      }
+    }
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+    .column1 {
+	  flex: 33.33%;
+	  height: 300px;
+      padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+      background-image: url(https://thoughtcatalog.com/wp-content/uploads/2017/01/pexels-photo-2455201.jpeg?w=1140);
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      line-height: 250px; 
+      box-shadow: 0px 2px 2px 2px black;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+
+    
+    .column1 h1{
+        color: white;
+        font-family: 'Righteous', cursive;
+        -webkit-text-stroke: 1px black;
+        font-size: 40px;
+
+    }
+
+
+    .column2{
+	  flex: 33.33%;
+	  height: 300px;
+      padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+        background-image: url(https://media.heragenda.com/brand-img/vdWyH43Gt/0x0/wp-content/uploads/2021/01/pexels-photo-4672717.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      line-height: 250px; 
+      box-shadow: 0px 2px 2px 2px black;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+
+    
+    .column2 h1{
+        color: white;
+        font-family: 'Righteous', cursive;
+        -webkit-text-stroke: 1px black;
+        font-size: 40px;
+    }
+
+
+    .column3{
+	  flex: 33.33%;
+	  height: 300px;
+      padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+background-image: url(https://image.marriage.com/advice/wp-content/uploads/2021/03/how-to-manage-a-complicated-relationship.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      line-height: 250px; 
+      box-shadow: 0px 2px 2px 2px black;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+
+    
+    .column3 h1{
+        color: white;
+        font-family: 'Righteous', cursive;
+        -webkit-text-stroke: 1px black;
+        font-size: 40px;
+    }
+
+
+    .column4{
+	  flex: 33.33%;
+	  height: 300px;
+      padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+background-image: url(https://netstorage-kami.akamaized.net/images/e0a7a004d6b311a5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      line-height: 250px; 
+      box-shadow: 0px 2px 2px 2px black;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+
+    
+    .column4 h1{
+        color: white;
+        font-family: 'Righteous', cursive;
+        -webkit-text-stroke: 1px black;
+        font-size: 40px;
+    }
+
+
+
+    .column5{
+	  flex: 33.33%;
+	  height: 300px;
+      padding: 10px;
+	  margin: 5px;
+	  text-align: center;
+background-image: url(https://lifeandtrendz.com/wp-content/uploads/2022/01/New-Project-2022-01-19T140315.092.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      vertical-align: middle;
+      line-height: 250px; 
+      box-shadow: 0px 2px 2px 2px black;
+      border-radius: 30px;
+      margin-bottom: 30px;
+    }
+
+    
+    .column5 h1{
+        color: white;
+        font-family: 'Righteous', cursive;
+        -webkit-text-stroke: 1px black;
+        font-size: 40px;
+    }
+	.containerc {
+	   display: flex;
+       align-items: center;
+       align-content: center;
+     
+	}	
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="header">
+    <div class="site-title">Tita Jirah Maritesa Love Advice </div>
+    <img class="logo" src="https://png.pngtree.com/png-clipart/20230310/ourmid/pngtree-smiling-beautiful-girl-logo-png-image_6642049.png" alt="Logo">
+  </div>
+
+<div class="relstat">
+    <h1>What is your relationship status?</h1>
+</div>
+
+<div class="containerz">
+    <div class="column1">
+        <div class="txt">
+            <a href="trd.html"><h1>TIRED</h1></a>
+            
+        </div>
+    </div>
+
+    <div class="column2">
+        <div class="txt">
+            <a href="ldr.html"> <h1>LONG DISTANCE RELATIONSHIP</h1></a>
+           
+        </div>
+    </div>
+
+    <div class="column3">
+        <div class="txt">
+            <a href="com.html">  <h1>COMPLICATED</h1></a>
+          
+        </div>
+    </div>
+
+    <div class="column4">
+        <div class="txt">
+            <a href="co.html"> <h1>COOL-OFF</h1></a>
+           
+        </div>
+    </div>
+
+    <div class="column5">
+        <div class="txt">
+                <a href="hr.html"> <h1>HEALTHY RELATIONSHIP</h1></a>
+           
+        </div>
+    </div>
+   
+ </div>
+
+</body>
+</html>
